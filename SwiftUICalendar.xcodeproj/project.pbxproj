@@ -15,6 +15,7 @@
 		686FF2DB2994733B00E33EA3 /* SwiftUICalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FF2DA2994733B00E33EA3 /* SwiftUICalendarUITests.swift */; };
 		686FF2DD2994733B00E33EA3 /* SwiftUICalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FF2DC2994733B00E33EA3 /* SwiftUICalendarUITestsLaunchTests.swift */; };
 		686FF2EA2994741100E33EA3 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FF2E92994741100E33EA3 /* CalendarView.swift */; };
+		686FF2EC29947C0000E33EA3 /* DateEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FF2EB29947C0000E33EA3 /* DateEventsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		686FF2DA2994733B00E33EA3 /* SwiftUICalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICalendarUITests.swift; sourceTree = "<group>"; };
 		686FF2DC2994733B00E33EA3 /* SwiftUICalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		686FF2E92994741100E33EA3 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		686FF2EB29947C0000E33EA3 /* DateEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEventsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				686FF2C32994733B00E33EA3 /* Assets.xcassets */,
 				686FF2C52994733B00E33EA3 /* Preview Content */,
 				686FF2E92994741100E33EA3 /* CalendarView.swift */,
+				686FF2EB29947C0000E33EA3 /* DateEventsView.swift */,
 			);
 			path = SwiftUICalendar;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				686FF2C22994733900E33EA3 /* ContentView.swift in Sources */,
+				686FF2EC29947C0000E33EA3 /* DateEventsView.swift in Sources */,
 				686FF2C02994733900E33EA3 /* SwiftUICalendarApp.swift in Sources */,
 				686FF2EA2994741100E33EA3 /* CalendarView.swift in Sources */,
 			);

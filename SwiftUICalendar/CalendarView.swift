@@ -23,7 +23,7 @@ struct CalendarView: View {
             }
             Text(Date().formatted(date: .complete, time: .omitted))
             ScrollView {
-                Text("Calendar Events Area")
+                DateEventsView()
             }
         }
     }
