@@ -22,8 +22,10 @@ struct CalendarView: View {
                 .padding(.horizontal, 16)
             }
             Text(Date().formatted(date: .complete, time: .omitted))
+            Divider()
             ScrollView {
                 DateEventsView()
+                    .padding(.horizontal, 16)
             }
         }
     }
