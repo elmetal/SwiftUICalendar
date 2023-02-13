@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6855C890299A35D700F154EF /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6855C88F299A35D700F154EF /* WeekdayView.swift */; };
 		686FF2C02994733900E33EA3 /* SwiftUICalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FF2BF2994733900E33EA3 /* SwiftUICalendarApp.swift */; };
 		686FF2C22994733900E33EA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FF2C12994733900E33EA3 /* ContentView.swift */; };
 		686FF2C42994733B00E33EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686FF2C32994733B00E33EA3 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6855C88F299A35D700F154EF /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		686FF2BC2994733900E33EA3 /* SwiftUICalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		686FF2BF2994733900E33EA3 /* SwiftUICalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICalendarApp.swift; sourceTree = "<group>"; };
 		686FF2C12994733900E33EA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				686FF2C52994733B00E33EA3 /* Preview Content */,
 				686FF2E92994741100E33EA3 /* CalendarView.swift */,
 				686FF2EB29947C0000E33EA3 /* DateEventsView.swift */,
+				6855C88F299A35D700F154EF /* WeekdayView.swift */,
 			);
 			path = SwiftUICalendar;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				686FF2C22994733900E33EA3 /* ContentView.swift in Sources */,
+				6855C890299A35D700F154EF /* WeekdayView.swift in Sources */,
 				686FF2EC29947C0000E33EA3 /* DateEventsView.swift in Sources */,
 				686FF2C02994733900E33EA3 /* SwiftUICalendarApp.swift in Sources */,
 				686FF2EA2994741100E33EA3 /* CalendarView.swift in Sources */,

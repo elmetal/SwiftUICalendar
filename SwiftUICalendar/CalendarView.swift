@@ -12,15 +12,7 @@ import SwiftUI
 struct CalendarView: View {
     var body: some View {
         VStack {
-            HStack {
-                ForEach(1..<8) { date in
-                    VStack {
-                        Text(Calendar.current.veryShortWeekdaySymbols[date-1]).font(.caption)
-                        Text("\(date)")
-                    }
-                }
-                .padding(.horizontal, 16)
-            }
+            WeekdayView()
             Text(Date().formatted(date: .complete, time: .omitted))
             Divider()
             ScrollView {
