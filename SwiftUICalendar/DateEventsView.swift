@@ -13,6 +13,9 @@ struct DateEventsView: View {
         VStack(alignment: .trailing, spacing: 0) {
             ForEach(0..<25) { time in
                 TimelineView(time: "\(time):00")
+                    .onPreferenceChange(CGFloatPreference.self) { value in
+                        print(value)
+                    }
 
                 Rectangle()
                     .frame(height: 24)
@@ -28,16 +31,16 @@ fileprivate struct TimelineView: View {
     let time: String
 
     var body: some View {
-        GeometryReader { geometry in
-            HStack {
-                Text(time)
-                    .font(.caption)
-
-                TimeLine()
-                    .stroke()
-                    .foregroundColor(Color(.separator))
-            }
-
+        HStack {
+            Text(time)
+                .font(.caption)
+                .background(GeometryReader { geometry in
+                    Color.clear.preference(key: CGFloatPreference.self,
+                                           value: geometry.size.width)
+                })
+            TimeLine()
+                .stroke()
+                .foregroundColor(Color(.separator))
         }
     }
 }
@@ -52,6 +55,16 @@ fileprivate struct TimeLine: Shape {
     }
 
     static var role: ShapeRole { .separator }
+}
+
+fileprivate struct CGFloatPreference: PreferenceKey {
+    typealias Value = CGFloat
+
+    static var defaultValue: Value = .zero
+
+    static func reduce(value: inout Value, nextValue: () -> Value) {
+        value = nextValue()
+    }
 }
 
 struct DateEventsView_Previews: PreviewProvider {
