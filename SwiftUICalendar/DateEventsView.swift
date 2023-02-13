@@ -9,12 +9,17 @@
 import SwiftUI
 
 struct DateEventsView: View {
+    @State private var timeTextWidthList: [CGFloat] = .init(repeating: .zero, count: 25)
+
     var body: some View {
-        VStack(alignment: .trailing, spacing: 0) {
+        VStack(alignment: .timeTextTrailing, spacing: 0) {
             ForEach(0..<25) { time in
                 TimelineView(time: "\(time):00")
                     .onPreferenceChange(CGFloatPreference.self) { value in
-                        print(value)
+                        timeTextWidthList[time] = value
+                    }
+                    .alignmentGuide(.timeTextTrailing) { demension in
+                        demension[.leading] - timeTextWidthList.max()! + timeTextWidthList[time]
                     }
 
                 Rectangle()
@@ -23,6 +28,9 @@ struct DateEventsView: View {
             }
 
             TimelineView(time: "0:00")
+                .alignmentGuide(.timeTextTrailing) { demension in
+                    demension[.leading] - timeTextWidthList.max()! + timeTextWidthList[0]
+                }
         }
     }
 }
@@ -65,6 +73,16 @@ fileprivate struct CGFloatPreference: PreferenceKey {
     static func reduce(value: inout Value, nextValue: () -> Value) {
         value = nextValue()
     }
+}
+
+extension HorizontalAlignment {
+    private enum TimeTextAlignment: AlignmentID {
+        static func defaultValue(in d: ViewDimensions) -> CGFloat {
+            return d[.leading]
+        }
+    }
+
+    static let timeTextTrailing = HorizontalAlignment(TimeTextAlignment.self)
 }
 
 struct DateEventsView_Previews: PreviewProvider {
