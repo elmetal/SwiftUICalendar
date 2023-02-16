@@ -17,6 +17,7 @@
 		686FF2DD2994733B00E33EA3 /* SwiftUICalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FF2DC2994733B00E33EA3 /* SwiftUICalendarUITestsLaunchTests.swift */; };
 		686FF2EA2994741100E33EA3 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FF2E92994741100E33EA3 /* CalendarView.swift */; };
 		686FF2EC29947C0000E33EA3 /* DateEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FF2EB29947C0000E33EA3 /* DateEventsView.swift */; };
+		68B734F9299DFA90005091E4 /* DateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B734F8299DFA90005091E4 /* DateEventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		686FF2DC2994733B00E33EA3 /* SwiftUICalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		686FF2E92994741100E33EA3 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		686FF2EB29947C0000E33EA3 /* DateEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEventsView.swift; sourceTree = "<group>"; };
+		68B734F8299DFA90005091E4 /* DateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				686FF2E92994741100E33EA3 /* CalendarView.swift */,
 				686FF2EB29947C0000E33EA3 /* DateEventsView.swift */,
 				6855C88F299A35D700F154EF /* WeekdayView.swift */,
+				68B734F8299DFA90005091E4 /* DateEventView.swift */,
 			);
 			path = SwiftUICalendar;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				686FF2EC29947C0000E33EA3 /* DateEventsView.swift in Sources */,
 				686FF2C02994733900E33EA3 /* SwiftUICalendarApp.swift in Sources */,
 				686FF2EA2994741100E33EA3 /* CalendarView.swift in Sources */,
+				68B734F9299DFA90005091E4 /* DateEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
