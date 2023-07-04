@@ -22,8 +22,6 @@ struct WeekdayView: View {
     }
 }
 
-struct WeekdayView_Previews: PreviewProvider {
-    static var previews: some View {
-        WeekdayView()
-    }
+#Preview {
+    WeekdayView(selectedDate: .constant(.now))
 }
