@@ -10,10 +10,11 @@ import Foundation
 import SwiftUI
 
 struct CalendarView: View {
+    @State var selectedDate: Date = .now
     var body: some View {
         VStack {
-            WeekdayView()
-            Text(Date().formatted(date: .complete, time: .omitted))
+            WeekdayView(selectedDate: $selectedDate)
+            Text(selectedDate.formatted(date: .complete, time: .omitted))
             Divider()
             ScrollView {
                 DateEventsView()
